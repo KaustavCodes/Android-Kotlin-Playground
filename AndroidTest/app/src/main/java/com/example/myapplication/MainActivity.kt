@@ -16,10 +16,12 @@ import com.example.myapplication.ui.theme.MyApplicationTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Surface
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
@@ -39,6 +41,17 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+}
+
+@Preview
+@Composable
+fun AppHeader() {
+    Surface(modifier = Modifier
+        .fillMaxWidth()
+        .background(Color.Blue)
+    ) {
+        Text("Hello World")
     }
 }
 
